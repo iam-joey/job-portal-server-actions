@@ -49,7 +49,7 @@ export default async function JobFilterSidebar({
 
   return (
     <aside className="sticky top-6 h-fit rounded-lg border bg-background p-4 md:w-[260px]">
-      <form action={filterJobs}>
+      <form action={filterJobs} key={JSON.stringify(filterValues)}>
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
             <Label htmlFor="q">Search</Label>
